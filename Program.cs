@@ -17,3 +17,11 @@ Console.WriteLine(myFoods[0]);
 
 //Stampa dell'ultimo elemento in classifica (nell'array)
 Console.WriteLine(myFoods[myFoods.Length - 1]);
+
+//Stampa dell'elemento nella posizione mediana
+int firstIndex;
+firstIndex = myFoods.Length - 1;
+firstIndex = firstIndex / 2;
+int secondIndex = firstIndex + 1;
+Console.WriteLine(myFoods[firstIndex]);
+Console.WriteLine(myFoods[secondIndex]);
