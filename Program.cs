@@ -5,3 +5,15 @@ string[] myFoods = { "Lasagne", "Carbonara", "Cotoletta", "Patate fritte", "Hamb
 
 //Calcolo e stampa della lunghezza dell'array
 Console.WriteLine(myFoods.Length);
+
+//Stampa della classifica in ordine
+for(int i = 0; i < myFoods.Length; i++)
+{
+    Console.WriteLine(myFoods[i]);
+}
+
+//Stampa del primo elemento in classica (nell'array)
+Console.WriteLine(myFoods[0]);
+
+//Stampa dell'ultimo elemento in classifica (nell'array)
+Console.WriteLine(myFoods[myFoods.Length - 1]);
