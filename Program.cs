@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 // Definizione ed Inizializzazione dell'array "myFoods"
-string[] myFoods = { "Lasagne", "Carbonara", "Cotoletta", "Patate fritte", "Hamburger", "Sushi", "Cornetto salato", "Barbabietola" };
+string[] myFoods = { "Lasagne", "Carbonara", "Cotoletta", "Patate fritte", "Hamburger", "Sushi", "Cornetto salato" };
 
 //Calcolo e stampa della lunghezza dell'array
 Console.WriteLine(myFoods.Length);
@@ -19,9 +19,17 @@ Console.WriteLine(myFoods[0]);
 Console.WriteLine(myFoods[myFoods.Length - 1]);
 
 //Stampa dell'elemento nella posizione mediana
-int firstIndex;
-firstIndex = myFoods.Length - 1;
-firstIndex = firstIndex / 2;
-int secondIndex = firstIndex + 1;
-Console.WriteLine(myFoods[firstIndex]);
-Console.WriteLine(myFoods[secondIndex]);
+if (myFoods.Length % 2 == 1)
+{
+    int middleIndex = myFoods.Length - 1;
+    middleIndex = middleIndex / 2;
+    Console.WriteLine(myFoods[middleIndex]);
+} else
+{
+    int firstIndex;
+    firstIndex = myFoods.Length - 1;
+    firstIndex = firstIndex / 2;
+    int secondIndex = firstIndex + 1;
+    Console.WriteLine(myFoods[firstIndex]);
+    Console.WriteLine(myFoods[secondIndex]);
+}
